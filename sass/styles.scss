@@ -69,6 +69,10 @@ h2 {
   color: white;
 }
 // End of reusable
+
+h2.jeremy {
+  font-size: 3rem !important;
+}
 .dashboard {
   background-color: $blue;
   padding: 2rem;
@@ -115,7 +119,7 @@ h2 {
 
   h2 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   h1 {
     font-weight: 400;
@@ -214,7 +218,7 @@ h2 {
       flex-direction: column;
 
       .dashboard {
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
       }
       .period-selector {
         padding: 2rem;

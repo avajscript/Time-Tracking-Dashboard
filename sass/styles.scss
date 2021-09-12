@@ -94,6 +94,10 @@ h2 {
 #weekly,
 #monthly {
   line-height: 75px;
+  cursor: pointer;
+  &:hover p {
+    color: white;
+  }
 }
 
 .grid-item {
@@ -146,6 +150,10 @@ h2 {
   border-radius: 1rem;
   z-index: 5;
   height: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: $desaturated-blue;
+  }
 }
 
 .grid-container {

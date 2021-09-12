@@ -184,6 +184,10 @@ h2 {
   background-color: #6f76c8;
 }
 
+.grid-content .flex-container:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+
 .grid-container {
   margin: 5% 5%;
   display: grid;

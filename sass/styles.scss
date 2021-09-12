@@ -160,6 +160,9 @@ h2 {
   &:hover {
     background-color: $desaturated-blue;
   }
+  .flex-container:nth-of-type(1) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .grid-container {

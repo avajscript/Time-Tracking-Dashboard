@@ -1,4 +1,189 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1424;
+  font-family: Rubik;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+  color: #bdc1ff;
+  font-size: 18px;
+}
+
+h1 {
+  color: white;
+  font-weight: 300;
+}
+
+h2 {
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-vertical {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-center-vert {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.flex-center-hor {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.flex-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dashboard {
+  background-color: #5847eb;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.dashboard p {
+  line-height: 2;
+}
+
+.dashboard img {
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 4rem;
+}
+
+.dashboard .flex {
+  flex-basis: 20%;
+}
+
+.dashboard .flex-center-vert {
+  flex-basis: 50%;
+}
+
+.dashboard h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#daily,
+#weekly,
+#monthly {
+  line-height: 75px;
+}
+
+.grid-item {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding-top: 50px;
+  height: 100%;
+}
+
+.grid-item h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.grid-item h1 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.grid-item:nth-of-type(2) {
+  background: #ff8c66 url("../images/icon-work.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-item:nth-of-type(3) {
+  background: #56c2e6 url("../images/icon-play.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-item:nth-of-type(4) {
+  background: #ff5c7c url("../images/icon-study.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-item:nth-of-type(5) {
+  background: #4acf81 url("../images/icon-exercise.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-item:nth-of-type(6) {
+  background: #7536d3 url("../images/icon-social.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-item:nth-of-type(7) {
+  background: #f1c65b url("../images/icon-self-care.svg") no-repeat;
+  background-position: 100% -15%;
+}
+
+.grid-content {
+  background-color: #1c1f4a;
+  padding: 25px;
+  border-radius: 1rem;
+  z-index: 5;
+  height: 100%;
+}
+
+.grid-container {
+  margin: 5% 0;
+  display: grid;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1052px) {
+  .flex-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .flex-container-vertical .flex {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  .flex-container-vertical .flex-right {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-item h2 {
+    font-size: 3rem;
+  }
+  .grid-item:nth-of-type(1) {
+    grid-row: 1/3;
+  }
+  .grid-item:nth-of-type(1) h2 {
+    font-size: 2rem;
+  }
 }

@@ -20,7 +20,7 @@ window.onload = () => {
   // Receives the timeframe (daily,weekly,monthly) as a string. Loops through the previously declared DOM element arrays. Sets the inner text to the corresponding data point based in timeframe input (daily, weekly, monthly)
   function setTimeFrame(timeframe) {
     curHours.forEach((hours, index) => {
-      hours.innerText = data[index].timeframes[timeframe].current;
+      hours.innerText = `${data[index].timeframes[timeframe].current}hrs`;
     });
     prevHours.forEach((hours, index) => {
       hours.innerText = `Last Week - ${data[index].timeframes[timeframe].previous}hrs`;

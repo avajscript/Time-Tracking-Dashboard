@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -39,7 +39,9 @@
           <div class="flex-container period-selector">
             <div id="daily" class="flex-center-hor"><p>Daily</p></div>
             <div id="weekly" class="flex-center-hor"><p>Weekly</p></div>
-            <div id="monthly" class="flex-center-hor"><p>Monthly</p></div>
+            <div id="monthly" class="flex-center-hor">
+              <p class="selected">Monthly</p>
+            </div>
           </div>
         </div>
         <!-- End of grid item-->
@@ -47,31 +49,18 @@
         <div class="grid-item">
           <div class="grid-content">
             <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
+              <div class="flex"><h1 class="title">Work</h1></div>
               <div class="flex-right">
                 <img src="./images/icon-ellipsis.svg" alt="three dots" />
               </div>
             </div>
             <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
-            </div>
-          </div>
-          <!-- End of grid content -->
-        </div>
-        <!-- End of grid item-->
-
-        <div class="grid-item">
-          <div class="grid-content">
-            <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
-              <div class="flex-right">
-                <img src="./images/icon-ellipsis.svg" alt="three dots" />
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
               </div>
-            </div>
-            <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
             </div>
           </div>
           <!-- End of grid content -->
@@ -81,14 +70,18 @@
         <div class="grid-item">
           <div class="grid-content">
             <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
+              <div class="flex"><h1 class="title">Work</h1></div>
               <div class="flex-right">
                 <img src="./images/icon-ellipsis.svg" alt="three dots" />
               </div>
             </div>
             <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
+              </div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
             </div>
           </div>
           <!-- End of grid content -->
@@ -98,14 +91,18 @@
         <div class="grid-item">
           <div class="grid-content">
             <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
+              <div class="flex"><h1 class="title">Work</h1></div>
               <div class="flex-right">
                 <img src="./images/icon-ellipsis.svg" alt="three dots" />
               </div>
             </div>
             <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
+              </div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
             </div>
           </div>
           <!-- End of grid content -->
@@ -115,14 +112,18 @@
         <div class="grid-item">
           <div class="grid-content">
             <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
+              <div class="flex"><h1 class="title">Work</h1></div>
               <div class="flex-right">
                 <img src="./images/icon-ellipsis.svg" alt="three dots" />
               </div>
             </div>
             <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
+              </div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
             </div>
           </div>
           <!-- End of grid content -->
@@ -132,14 +133,39 @@
         <div class="grid-item">
           <div class="grid-content">
             <div class="flex-container">
-              <div class="flex"><h1>Work</h1></div>
+              <div class="flex"><h1 class="title">Work</h1></div>
               <div class="flex-right">
                 <img src="./images/icon-ellipsis.svg" alt="three dots" />
               </div>
             </div>
             <div class="flex-container-vertical">
-              <div class="flex"><h2>32hrs</h2></div>
-              <div class="flex-right"><p>Last Week - 8hrs</p></div>
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
+              </div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- End of grid content -->
+        </div>
+        <!-- End of grid item-->
+
+        <div class="grid-item">
+          <div class="grid-content">
+            <div class="flex-container">
+              <div class="flex"><h1 class="title">Work</h1></div>
+              <div class="flex-right">
+                <img src="./images/icon-ellipsis.svg" alt="three dots" />
+              </div>
+            </div>
+            <div class="flex-container-vertical">
+              <div class="flex">
+                <h2 class="hours-current">32hrs</h2>
+              </div>
+              <div class="flex-right">
+                <p class="hours-previous">Last Week - 8hrs</p>
+              </div>
             </div>
           </div>
           <!-- End of grid content -->
